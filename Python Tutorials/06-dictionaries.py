@@ -23,11 +23,11 @@ numbers[4] #in this case the value is an integer
 dictio=dict() #empty dictionary
 dictio1={}      #empty too
 car1=dict(brand="Ford",model="Fiesta",year="2014") #dictionary with some keys
-car2={"brand"="Ford","model"="Fiesta","year"="2014"}
+car2={"brand":"Ford","model":"Fiesta","year":"2014"}
 
 #if we use len() on a dictionary, it returns the number of keys inside it
 
-len(dictio2) #it is 4
+len(car2) #it is 4
 
 #To access an element of the dictionary, we use the same notation of the lists:
 
@@ -71,12 +71,12 @@ del car["brand"]
 
 del car #WARNING, IT DELETE ALL THE DICTIONARY AND THE VARIABLE
 
-car.clear() #same of "del car", but it doesn't cancel the variable
+car1.clear() #same of "del car", but it doesn't cancel the variable
 
 
 #dictionaries can be nested
-address={"name"="Viale Luigi Euinaudi","civic":6,"city"="Tortona"}
+address={"name":"Viale Luigi Euinaudi","civic":6,"city":"Tortona"}
 
-person={"name"="Guglielmo","surname"="Marconi","age":43,"address"=address}
+person={"name":"Guglielmo","surname":"Marconi","age":43,"address":address}
 
 print(person)

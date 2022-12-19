@@ -32,7 +32,7 @@ lis[3] #element 5
 
 lis[4] #element 7
 
-lis[10] #ERROR
+#lis[10] #ERROR
 
 #We can also access using negative numbers, in this way we start from the ending:
 
@@ -40,7 +40,7 @@ lis[-1] #element 7
 
 lis[-3] #element 2
 
-lis[-7] #ERROR
+#lis[-7] #ERROR
 
 #We can also get a sublist in this way:
 
@@ -107,7 +107,7 @@ fruits.pop(1) #remove the element at position 1 from the list
 
 fruits.pop() #if we don't specify the index, the function remove the last element
 
-del fruits[2] #delete the element 2 from the list fruit
+del fruits[0] #delete the element 2 from the list fruit
 
 del fruits #if we don't specify the index, del delete alla the list and the variable
 

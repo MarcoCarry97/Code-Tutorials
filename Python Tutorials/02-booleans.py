@@ -18,43 +18,43 @@ def compare(a,b):
 
 #the operator not returns the opposite boolean value, so:
 
-not True #is False
+notT=not True #is False
 
-not False #is True
+notF=not False #is True
 
 #the operator or returns True if almost one of the operands is True
 
-True or True #is True
+TorT=True or True #is True
 
-True or False #is True
+TorF=True or False #is True
 
-False or True #is True
+ForT=False or True #is True
 
-False or False #is False
+ForF=False or False #is False
 
 #the operator and returns True if all the operands are True
 
-True and True #is True
+TandT=True and True #is True
 
-True and False #is False
+TandF=True and False #is False
 
-False and True #is False
+FandT=False and True #is False
 
-False and False #is False
+FandF=False and False #is False
 
 #If we want to test if a number is in a specific range, how can we do?
 #In this way:
 
 def isInRange(limitLeft,limitRight,testValue):
-    return limitLeft>=testValue and testValue<=limitRight
+    return limitLeft<=testValue and testValue<=limitRight
 
 def isInRange2(limitLeft,limitRight,testValue):
-    return limitLeft>=testValue>=limitRight
+    return limitLeft<=testValue<=limitRight
 
 #and if is it outside the range?
 
 def isOutRange(limitLeft,limitRight,testValue):
-    return not IsInRange(limitLeft,limitRIght,testValue)
+    return not isInRange(limitLeft,limitRight,testValue)
 
 #boolean variables are useful with the if statement, it is a special instruction
 #which allow us to execute a part of code respect to another in base of a condition

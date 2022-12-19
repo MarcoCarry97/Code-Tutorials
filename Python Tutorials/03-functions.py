@@ -5,10 +5,10 @@ def func1():
     print("This is a function of one variable")
 
 def func2(var1):
-    print("This is a function with one variable, the value is: "+var1)
+    print("This is a function with one variable, the value is: "+str(var1))
 
 def func3(var1:int,var2:float):
-    print("function of two variables, two numbers precisely: "+var1+" "+var2)
+    print("function of two variables, two numbers precisely: "+str(var1)+" "+str(var2))
 
 #a function can return a value, we can do it using the keyword 'return'
 
@@ -57,13 +57,12 @@ def fibonacci(n:int)->int:
 #there is also a special time of functions called lambda expressions,
 #they are useful to model simple calculus, for example:
     
-    rectArea=lambda base,height:base*heigh
+rectArea=lambda base,height:base*height
     
-    triArea=lambda base: lambda height: base*height/2
+triArea=lambda base: lambda height: base*height/2
 
-    rectArea(5,3) #returns 15
-
-    triArea(6)(4) #returns 12
+area1=rectArea(5,3) #returns 15
+area2=triArea(6)(4) #returns 12
 
 #why does triArea need a different type of call respect rectArea?
 #Because the lambda expressions return the value of the right of :,

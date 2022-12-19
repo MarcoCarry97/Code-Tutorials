@@ -30,7 +30,7 @@ def readAndHello():
 #input() return a string, so if we want for example an integer value, we have to convert it.
 
 def readIntAndPrint():
-    var1=input("Type a number\n")
+    var1=int(input("Type a number\n"))
     print(var1)
     
 #Python has 9 types:
